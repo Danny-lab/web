@@ -1,0 +1,100 @@
+.modalHS {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    align-items: center;
+    justify-content: center;
+}
+
+.modalHS-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Adjusted width */
+    max-width: 900px; /* Increased max-width */
+    max-height: 90%; /* Limit height */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.modalHS .close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalHS .close:hover,
+.modalHS .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-headerHs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    height: 50px;
+}
+
+.modal-logo {
+    height: 50px;
+}
+
+.modalHS .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 10px;
+}
+
+.modalHS .modal-img {
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 100vh; /* Limit image height */
+    margin-bottom: 20px;
+    display: block;
+}
+
+.modalHS .modal-description {
+    width: 100%;
+    text-align: center;
+}
+
+.modalHS .modal-description h2 {
+    margin-top: 0;
+    font-size: 24px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 15px; 
+}
+
+.modal-footerHs {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    height: 30px;
+    background-color: #f2f2f2; /* Gray background color */
+}

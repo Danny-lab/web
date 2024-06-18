@@ -1,0 +1,162 @@
+.modalct {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    overflow: auto; /* Permitir scroll vertical si es necesario */
+}
+
+.modalct .modal-content {
+    background-color: #fefefe;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.modalct .modal-header,
+.modalct .modal-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalct .modal-header h2,
+.modalct .modal-footer p {
+    margin: 0;
+}
+
+.modalct .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modalct .close:hover,
+.modalct .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalct .modal-body {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.modalct .image-section {
+    flex: 1;
+    background-color: #fbfbfb;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 300px; /* Establece un ancho mínimo para evitar el desbordamiento */
+}
+
+.modalct .image-section img {
+    max-width: 30%;
+    height: auto;
+}
+
+.modalct .image-section .info-below-logo {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modalct .image-section .info-below-logo p {
+    margin: 5px 0;
+}
+
+.modalct .login-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 300px; /* Establece un ancho mínimo para evitar el desbordamiento */
+}
+
+.modalct .login-form h2 {
+    color: #000;
+    border-bottom: 3px solid #0054A4;
+    display: inline-block;
+}
+
+.modalct .login-form label {
+    display: block;
+    margin: 2px 10 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.modalct .login-form input[type="text"],
+.modalct .login-form input[type="email"],
+.modalct .login-form input[type="city-country"],
+.modalct .login-form input[type="phone"],
+.modalct .login-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.modalct .login-form .login-btn {
+    background-color: #0054A4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modalct .login-form .login-btn:hover {
+    background-color: #003f7f;
+}
+
+@media (max-width: 768px) {
+    .modalct .modal-content {
+        flex-direction: column;
+        width: 90%; /* Asegúrate de que el modal no sea demasiado ancho en pantallas pequeñas */
+    }
+
+    .modalct .modal-body {
+        flex-direction: column; /* Cambiar el orden de los elementos a columna */
+    }
+
+    .modalct .image-section, .modalct .login-form {
+        width: 100%;
+    }
+
+    .modalct .login-form {
+        order: 1; /* Asegurar que el formulario aparezca primero */
+    }
+
+    .modalct .image-section {
+        order: 2; /* Asegurar que el logo aparezca después del formulario */
+    }
+}
