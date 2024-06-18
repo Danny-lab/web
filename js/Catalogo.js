@@ -8,7 +8,7 @@ const images = {
         { src: 'CATEGORIA DISPENSADORES/IMAGEN 2.jpg' },
         { src: 'CATEGORIA DISPENSADORES/IMAGEN 3.jpg' },
         { src: 'CATEGORIA DISPENSADORES/IMAGEN 4.jpg' },
-        { src: 'CATEGORIA DISPENSADORES/Final.jpg' },
+        { src: 'CATEGORIA DISPENSADORES/FINAL.jpg' }
     ],
     bar: [
         { src: 'Bar/A.jpg' },
